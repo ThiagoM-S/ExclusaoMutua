@@ -14,9 +14,9 @@ class Processo(Thread):
         while True:
             if lock == 0:
                 lock = 1
-                print "processo %d entrou na regiao critica" %self.p
+                print ("processo %d entrou na regiao critica" %self.p)
                 lock = 0
-                print "processo saiu da regiao critica"
+                print ("processo saiu da regiao critica")
             else:
                 sleep(60)
             sleep(3)
